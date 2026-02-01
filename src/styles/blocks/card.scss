@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    margin-bottom: 40px;
+    width: 160px;
+    height: 134px;
+    background-image: url(../images/imac.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    align-self: center;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: $main-accent;
+  }
+
+  &__description {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    color: $secondary;
+  }
+
+  &__price {
+    @include flex-btw;
+
+    margin-bottom: 16px;
+
+    &-p {
+      color: $secondary;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+    }
+
+    &-value {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 113%;
+    }
+  }
+
+  &__button {
+    align-self: center;
+
+    border: none;
+
+    width: 166px;
+    height: 40px;
+
+    border-radius: 5px;
+    background-color: $blue-accent;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114%;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #fff;
+      border: 1px solid $blue-accent;
+      color: $blue-accent;
+    }
+  }
+}
